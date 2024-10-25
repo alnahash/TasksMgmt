@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Task Manager</h1>
+      <button id="sign-in-btn">Sign in with Google</button>
+      <button id="sign-out-btn" style="display: none;">Sign Out</button>
+    </header>
+
+    <main>
+      <section id="task-input">
+        <input type="text" id="task-name" placeholder="New Task" required />
+        <input type="date" id="task-date" required />
+        <button id="add-task-btn">Add Task</button>
+      </section>
+
+      <section id="task-list">
+        <h2>Your Tasks</h2>
+        <ul id="tasks"></ul>
+      </section>
+    </main>
+  </div>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
